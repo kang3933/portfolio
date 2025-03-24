@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+body{
+background-color:#f5f5f5;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+
+.main {
+  background-color: #f5f5f5;
+  height: 90vh;
+  width:auto;
+
+}
+
+.home_hero {
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  background: #f5f5f5;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Pretendard Variable;
+  text-align:center;
+  align-content: center;
+}
+
+.home_project_section {
+  height: 60vh;
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.home_design {
+  height: 100%;
+  width: 49%;
+  background-color: #E3E3E3;
+  border-radius: 1rem;
+}
+
+.home_development {
+  height: 100%;
+  width: 49%;
+  border-radius: 1rem;
+  background-color: #494FFF;
+}
+
+.project_hero {
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  background: #f5f5f5;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Pretendard Variable;
+  text-align:center;
+  align-content: center;
+}
+
+.project_project_section {
+  height: 60vh;
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.project_design {
+  height: 100%;
+  width: 49%;
+  background-color: #E3E3E3;
+  border-radius: 1rem;
+}
+
+.project_development {
+  height: 100%;
+  width: 49%;
+  border-radius: 1rem;
+  background-color: #494FFF;
+}
+
+.about_content_wrapper{
+  padding-top: 15vh;
+  padding-bottom: 13vh;
+  height: auto;
+  display: flex;
+}
+
+.about_hero {
+  width: 60%;
+  background: #f5f5f5;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Pretendard Variable;
+  text-align: left;
+  align-content: baseline;
+}
+
+.aboutTitles{
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.about_information {
+  width: 45%;
+  height: 100%;
+  /*display: flex;*/
+}
+
+.aboutContentWrapper {
+  display: flex;
+}
+
+.titles {
+  width: 30%;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.profileDescription{
+  width: 70%;
+  font-weight: 600;
+}
+
+.subTitle{
+  font-weight: 600;
+}
+
+.aboutDescription {
+  width: 70%;
+}
+
+.description{
+  font-size: 14px;
+  width:100%;
+}
+
+.experienceDescription{
+  width: 70%;
+}
+
+.toolsDescription {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolsGrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContainer{
+  display: flex;
+  flex-direction: column;
+}
