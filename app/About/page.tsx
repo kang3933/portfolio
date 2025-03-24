@@ -19,7 +19,7 @@ export default function Home(){
                 PROFILE
               </div>
               <div className='profileDescription'>
-                <ul className='flex flex-col gap-6'>
+                <ul className='flex flex-col gap-3'>
                   <li>1999.11.24</li>
                   <li>010-7344-3933</li>
                   <li>henryk3933@gmail.com</li>
@@ -31,7 +31,7 @@ export default function Home(){
               <div className='titles'>
                EDUCATION
               </div>
-              <div className='flex flex-col gap-6'>
+              <div className='flex flex-col gap-3'>
                 <div className='flex flex-col gap-1'>
                   <div className='subTitle'>
                     Queensland University of Technology
@@ -53,7 +53,7 @@ export default function Home(){
               <div className='titles'>
                EXPERIENCE
               </div>
-              <div className='flex flex-col gap-6'>
+              <div className='flex flex-col gap-3'>
                 <div className='experienceContainer'>
                   <div className='subTitle'>
                    Beinc - Web Designer
@@ -97,7 +97,7 @@ export default function Home(){
 
             <div className='flex flex-col gap-6'>
               {/* 디자인 툴 섹션션 */}
-              <div className= 'toolsDescription gap-6'>
+              <div className= 'toolsDescription gap-4'>
                 <div className='subTitle'>
                   디자인
                 </div>
@@ -111,7 +111,7 @@ export default function Home(){
               </div>
 
               {/* 디자인 툴 섹션션 */}
-              <div className= 'toolsDescription gap-6'>
+              <div className= 'toolsDescription gap-4'>
                 <div className='subTitle'>
                   개발
                 </div>
