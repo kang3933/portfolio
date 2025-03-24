@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <header
-  className={`h-16 flex items-center justify-between font-pretendard fixed top-0 left-0 w-full shadow-md transition-transform duration-300 ${
+  className={`h-16 flex items-center justify-between font-pretendard fixed top-0 left-0 w-full transition-transform duration-300 ${
     isVisible ? "translate-y-0" : "-translate-y-full"
   } px-[5%]`}
 >
