@@ -73,17 +73,60 @@ padding-right: 5%;
 }
 
 .project_design {
+  position:relative;
+  padding: 5%;
   height: 100%;
   width: 49%;
-  background-color: #E3E3E3;
+  background-color: #F5F5F5;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.project_design:hover {
+  box-shadow: 0px 0px 20px rgba(73, 79, 255, 0.6); /* #494FFF 컬러 */
+}
+
+.project_design img{
+  padding-bottom: 1rem;
+  width:auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project_title{
+  width:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project_text {
+  color: #131313;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: Pretendard Variable;
+}
+
+
 .project_development {
+  position:relative;
+  padding: 2%;
   height: 100%;
   width: 49%;
+  background-color: #F5F5F5;
   border-radius: 1rem;
-  background-color: #494FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .about_content_wrapper{
