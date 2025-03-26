@@ -7,7 +7,7 @@ export default function Home(){
     <Header />
     <main>
       <div className='project_hero'>
-        <h1>Projects</h1>
+        <h1>Peninsula</h1>
         <h1></h1>
       </div>
       <div className='flex flex-col gap-8 pb-[10vh]'>

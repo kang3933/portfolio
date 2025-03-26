@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Link from "next/link";
 
 export default function Home(){
   return (
@@ -11,14 +12,21 @@ export default function Home(){
       </div>
       <div className='flex flex-col gap-8 pb-[10vh]'>
         <div className='project_project_section'>
-          <div className='project_design'>
-            <img src='./mockup/peninsula/1.png' alt='Peninsula Hero Image' />
 
-            <div className='project_text'>Peninsula Group Limited</div>
-          </div>
-          <div className='project_development'>
-            
-          </div>
+          <Link href="/Projects/Peninsula" className="project_design">
+            <div className='project_design'>
+              <img src='./mockup/peninsula/1.png' alt='Peninsula Hero Image' />
+              <div className='project_text'>Peninsula Group Limited</div>
+            </div>
+          </Link>
+
+          <Link href="/Projects/Dev1" className="project_development">
+            <div className='project_development'>
+              <img src='./mockup/peninsula/1.png' alt='Peninsula Hero Image' />
+              <div className='project_text'>Peninsula Group Limited</div>
+            </div>
+          </Link>
+
         </div>
         <div className='project_project_section'>
           <div className='project_design'>
