@@ -1,10 +1,7 @@
-import Header from "@/components/header";
-//import Image from "next/image";
 
 export default function Home(){
   return (
     <>
-    <Header />
     <main>
       <div className='home_hero'>
         <h1>안녕하세요,</h1>

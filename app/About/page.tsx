@@ -1,10 +1,7 @@
-import Header from "@/components/header";
-
 
 export default function Home(){
   return (
     <>
-    <Header />
     <main>
       <div className = 'about_content_wrapper'>
         <div className='about_hero'>
