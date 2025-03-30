@@ -58,20 +58,21 @@ export default function Home(){
               <div className="장점">
                 <div>장점</div>
                 <div className="space-x-2 h-[3rem]">
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">심플한 레이아웃</span>
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">통일된 브랜딩</span>
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">아이콘 활용</span>
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">깔끔한 텍스트 정렬</span>
+                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">심플한 레이아웃</span>
+                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">통일된 브랜딩</span>
+                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">아이콘 활용</span>
+                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">깔끔한 텍스트 정렬</span>
                 </div>
               </div>
               <div className="단점">
                 <div>단점</div>
-                <div className="space-x-2 h-[3rem]">
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">심플한 레이아웃</span>
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">통일된 브랜딩</span>
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">아이콘 활용</span>
-                  <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">깔끔한 텍스트 정렬</span>
-                </div>
+                  <div className="space-x-2 h-[3rem]">
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">CTA 부족</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">일정하지 않은 섹션간 간격</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">과도한 양의 텍스트</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">여백 부족</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">브랜딩에 맞지 않는 색상</span>
+                  </div>
               </div>
 
               <p className="text-gray-600 text-sm">
@@ -87,15 +88,24 @@ export default function Home(){
                 <div>장점
                   <div className="space-x-2 h-[3rem]">
                       <div className="flex justify-between">                
-                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">심플한 레이아웃</span>
-                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">통일된 브랜딩</span>
-                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">아이콘 활용</span>
-                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">공공언어 텍스트 정제</span>
-                        <br /> <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-sm">부담스럽지 않은 양의 텍스트</span>
+                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">심플한 레이아웃</span>
+                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">통일된 브랜딩</span>
+                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">아이콘 활용</span>
+                        <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">공공언어 텍스트 정제</span>
+                        <br /> <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">부담스럽지 않은 양의 텍스트</span>
                       </div>
                     </div>
                 </div>
-
+                <div className="단점">
+                <div>단점</div>
+                  <div className="space-x-2 h-[3rem]">
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">CTA 부족</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">일정하지 않은 섹션 크기</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">버튼 애니메이션 부재</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">이미지 화질 저하</span>
+                    <span className="px-3 py-1 border-1 bg-gray-200 rounded-full text-xs">일정하지 않은 레이아웃</span>
+                  </div>
+                </div>
                   <div>
                 </div>
               </div>
