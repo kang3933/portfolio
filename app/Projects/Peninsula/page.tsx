@@ -54,7 +54,7 @@ export default function Home() {
   const prevSlide = () => setIndex((prev) => (prev - 1 + sections.length) % sections.length);
 
   // Toggle dropdown visibility
-  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+  //const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
     <main className="w-full flex flex-col items-center">
