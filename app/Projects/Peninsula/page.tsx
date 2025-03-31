@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const [index, setIndex] = useState(0);
-  const [dropdownOpen, setDropdownOpen] = useState(false); // State for the dropdown visibility
+  //const [dropdownOpen, setDropdownOpen] = useState(false); // State for the dropdown visibility
   
   const [activeAsIs, setActiveAsIs] = useState<number | null>(null);   // As-Is 아코디언 상태
   const [activeToBe, setActiveToBe] = useState<number | null>(null);  // To-Be 아코디언 상태
