@@ -7,8 +7,8 @@ export default function Home() {
   const [index, setIndex] = useState(0);
   const [dropdownOpen, setDropdownOpen] = useState(false); // State for the dropdown visibility
   
-  const [activeAsIs, setActiveAsIs] = useState(null);  // As-Is 아코디언 상태
-  const [activeToBe, setActiveToBe] = useState(null);  // To-Be 아코디언 상태
+  const [activeAsIs, setActiveAsIs] = useState<number | null>(null);   // As-Is 아코디언 상태
+  const [activeToBe, setActiveToBe] = useState<number | null>(null);  // To-Be 아코디언 상태
 
   const asIsItems = [
     {
@@ -79,7 +79,7 @@ export default function Home() {
       </div>
 
 
-      <section className="relative w-full max-w-[1300px] flex justify-center items-center h-[70vh] my-20">
+      <section className="relative w-full max-w-[1300px] flex justify-center items-center h-[80vh] my-20">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -107,7 +107,7 @@ export default function Home() {
         </button>
       </section>
 
-      <section className="max-w-[1300px] flex justify-between items-center h-[100vh] space-y-10 px-5 my-20">
+      <section className="max-w-[1300px] flex justify-between items-center h-[80vh] space-y-10 px-5 my-20">
       <div className="w-[1300px] my-5 flex justify-between items-center">
         {/* As-Is 아코디언 메뉴 */}
         <div className="w-[45%] space-y-4">
