@@ -38,23 +38,22 @@ const Header = () => {
   }, [lastScrollY]); // lastScrollY가 변경될 때마다 실행
 
   return (
+   
     <header
-    className={`h-16 flex items-center justify-between font-pretendard fixed top-0 left-0 w-full transition-transform duration-300 ${
+  className={`h-16 flex items-center justify-center font-pretendard fixed top-0 left-0 w-full transition-transform duration-300 ${
     isVisible ? "translate-y-0" : "-translate-y-full"
   } px-[5%]`}
 >
   {/* 배경 스타일을 적용할 div */}
-  <div
-    className="absolute top-0 left-0 w-full h-full bg-[#F5F5F5]/50 backdrop-blur-sm z-[-1]" 
-  />
-  
-  {/* 네비게이션 중앙 정렬을 위한 컨테이너 */}
-  <div className="flex w-full justify-left relative z-10">
+  <div className="absolute top-0 left-0 w-full h-full bg-[#F5F5F5]/50 backdrop-blur-sm z-[-1]" />
+
+  {/* 최대 너비를 1300px로 제한하는 컨테이너 */}
+  <div className="w-full max-w-[1300px] flex justify-between items-center relative z-10">
+    {/* 네비게이션 */}
     <nav>
       <div className="flex gap-x-12">
         {navigation.map((item) => {
           const isActive = pathname === item.href; // 현재 페이지인지 확인
-
           return (
             <Link key={item.id} href={item.href} className="relative group">
               <span
@@ -75,16 +74,17 @@ const Header = () => {
         })}
       </div>
     </nav>
-  </div>
 
-  {/* CTA 버튼 */}
-  <Link
-    href="/Resume"
-    className="w-[132px] h-[38px] bg-[#494FFF] text-white text-[12px] font-semibold flex items-center justify-center rounded-full shadow-md transition-[box-shadow] duration-[300ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:shadow-[0_0_20px_rgba(73,79,255,0.6)]"
-  >
-    Resume
-  </Link>
+    {/* CTA 버튼 */}
+    <Link
+      href="/Resume"
+      className="w-[132px] h-[38px] bg-[#494FFF] text-white text-[12px] font-semibold flex items-center justify-center rounded-full shadow-md transition-[box-shadow] duration-[300ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:shadow-[0_0_10px_rgba(73,79,255,0.6)]"
+    >
+      Resume
+    </Link>
+  </div>
 </header>
+
 
   );
 };

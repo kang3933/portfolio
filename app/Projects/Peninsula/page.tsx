@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+
+
 export default function Home() {
   const [index, setIndex] = useState(0);
   //const [dropdownOpen, setDropdownOpen] = useState(false); // State for the dropdown visibility
@@ -13,25 +15,33 @@ export default function Home() {
   const asIsItems = [
     {
       title: "브랜드 일관성 부족",
-      content: "이 항목에 대한 자세한 내용이 펼쳐집니다. 문제점 1에 대한 설명."
+      content: (
+
+        <ul className="list-disc pl-5">
+          <li>정보 구조가 체계적이지 않아 정보 탐색이 어려움</li>
+          <li>지나치게 많은 텍스트와 시각적 요소로 인해 집중도, 가독성 저하</li>
+          <li>컨텐츠 배치 비효율적, 페이지별 정보 연결 불명확, 사용자의 탐색 경험 저하</li>
+        </ul>
+
+      )
     },
     {
-      title: "복잡한 레이아웃과 낮은 가독성성",
+      title: "복잡한 레이아웃과 낮은 가독성",
       content: "이 항목에 대한 자세한 내용이 펼쳐집니다. 문제점 2에 대한 설명."
     },
     {
-      title: "전환율 저하하",
+      title: "전환율 저하",
       content: "이 항목에 대한 자세한 내용이 펼쳐집니다. 문제점 3에 대한 설명."
     }
   ];
 
   const toBeItems = [
     {
-      title: "Peninsula Goup 디자인 가이드라인 사용, 일관성 확립립",
+      title: "Peninsula Goup 디자인 가이드라인 사용, 일관성 확립",
       content: "이 항목에 대한 자세한 내용이 펼쳐집니다. 개선된 디자인 1에 대한 설명."
     },
     {
-      title: "정보 구조 개선으로 간결하고 직관적인 레이아웃 구성성",
+      title: "정보 구조 개선으로 간결하고 직관적인 레이아웃 구성",
       content: "이 항목에 대한 자세한 내용이 펼쳐집니다. 개선된 디자인 2에 대한 설명."
     },
     {
@@ -57,14 +67,14 @@ export default function Home() {
   //const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <main className="w-full flex flex-col items-center">
+    <main className="w-full bg-white flex font-[pretendard] flex-col items-center">
 
-      <div className="pt-[6rem] max-w-[1300px] w-full flex justify-center items-center overflow-hidden">
-        <img className="h-[80vh] rounded-2xl w-screen object-cover" src="/mockup/peninsula/2.png"/>
+      <div className="pt-[4rem] w-full pb-0 flex justify-center items-center overflow-hidden">
+        <img className="h-[90vh] w-screen object-cover" src="/mockup/peninsula/2.png"/>
       </div>
 
-      <div className="w-[1300px] m-0">
-        <div className="flex flex-row justify-between w-full">
+      <div className="w-full bg-white pl-[5%] pr-[5%] pt-[200px] pb-[200px] m-0 flex justify-center">
+        <div className="max-w-[1300px] flex flex-row justify-between w-full">
           <div className='projectDetail w-[50%] '>
             <h1>Peninsula Group Limited</h1>
             <h5 className="text-base">UI/UX Design</h5>
@@ -79,7 +89,16 @@ export default function Home() {
       </div>
 
 
-      <section className="relative w-full max-w-[1300px] flex justify-center items-center h-[80vh] my-20">
+
+
+      <section className="w-full max-w-[100%] bg-[#F5F5F5] p-[5%] flex justify-center items-center h-[100vh]">
+        
+        <button
+          onClick={prevSlide}
+          className="left-0 w-12 h-12 flex items-center justify-center bg-[#494FFF] text-white rounded-full shadow-lg"
+        > ◀
+        </button>
+        
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -87,28 +106,28 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            className="absolute w-full"
+            className="w-full"
           >
             {sections[index]}
           </motion.div>
         </AnimatePresence>
 
         {/* 슬라이드 버튼 */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-[calc(50%-800px)] w-12 h-12 flex items-center justify-center bg-[#494FFF] text-white rounded-full shadow-lg"
-        > ◀
-        </button>
+
         
         <button
           onClick={nextSlide}
-          className="absolute right-[calc(50%-800px)] w-12 h-12 flex items-center justify-center bg-[#494FFF] text-white rounded-full shadow-lg"
+          className="right-0 w-12 h-12 flex items-center justify-center bg-[#494FFF] text-white rounded-full shadow-lg"
         > ▶
         </button>
       </section>
 
-      <section className="max-w-[1300px] flex justify-between items-center h-[80vh] space-y-10 px-5 my-20">
-      <div className="w-[1300px] my-5 flex justify-between items-center">
+
+
+
+
+      <section className="w-full flex justify-center font-[pretendard] items-center h-[60vh] space-y-10 px-5 my-20">
+      <div className="w-full max-w-[1300px] flex flex-row justify-between items-start">
         {/* As-Is 아코디언 메뉴 */}
         <div className="w-[45%] space-y-4">
           <h3 className="text-[1.5rem] font-semibold">As-Is</h3>
@@ -117,12 +136,12 @@ export default function Home() {
               <div key={index}>
                 <button
                   onClick={() => toggleAsIs(index)}
-                  className="w-full text-left p-4 bg-gray-200 rounded-md border-b-2 border-gray-300"
+                  className="w-full text-left p-4 font-bold border-b-2 border-gray-300"
                 >
                   {item.title}
                 </button>
                 {activeAsIs === index && (
-                  <div className="p-4 bg-gray-100 rounded-md">{item.content}</div>
+                  <div className="p-4 bg-gray-100 rounded-b-md">{item.content}</div>
                 )}
               </div>
             ))}
@@ -137,7 +156,7 @@ export default function Home() {
               <div key={index}>
                 <button
                   onClick={() => toggleToBe(index)}
-                  className="w-full text-left p-4 bg-gray-200 rounded-md border-b-2 border-gray-300"
+                  className="w-full text-left p-4 font-bold border-b-2 border-gray-300"
                 >
                   {item.title}
                 </button>
@@ -151,9 +170,180 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="bg-[#F5F5F5] pt-[250px] w-full flex justify-center">
+
+        <div className="w-full max-w-[1300px] flex flex-row justify-between items-center h-full">
+
+          <div className="w-full flex flex-col gap-y-[5rem]">
+
+            <div className="flex flex-col gap-y-[15px]">
+              <div className="text-4xl font-bold flex">New Website,<br/>New Standard</div>
+              <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">솔루션 1 : 디자인 가이드라인</div>
+            </div>
+
+            <div className="w-full flex flex-row align-middle items-center pb-[80px]">
+
+              <div className="flex w-[50%] align-middle justify-between">
+                <div className="text-3xl font-bold">
+                  일관된 디자인 시스템, <br /> 브랜드 통일성 확보.
+                </div>
+              </div>
+
+              <div className="fontStyleBox flex w-[45%] justify-between">
+
+                <div className="fontOne">
+
+                  <div className="">HEADING TYPOGRAPHY</div>
+                  <div className="font-[castledown] font-black text-[2.25rem]">Castledown</div>
+                  <div className="font-[castledown] text-[#A9A9A9]">
+                    <br/> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                    <br/> abcdefghijklmnopqrstuvwxyz
+                    <br/> 1234567890!@#$%^&*()
+                  </div>
+
+                </div>
+
+                <div className="fontOne">
+
+                  <div className="">BODY TYPOGRAPHY</div>
+                  <div className="font-[Centra-No1] font-black text-[2.25rem]">Centra No1</div>
+                  <div className="font-[Centra-No1] text-[#A9A9A9]">
+                    <br/> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                    <br/> abcdefghijklmnopqrstuvwxyz
+                    <br/> 1234567890!@#$%^&*()
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+      </section>
+
+
+      <section className="w-full bg-[#F5F5F5] pb-[80px] flex flex-row justify-center items-center">
+        <div className=" max-w-[1300px] flex flex-row justify-between items-center">
+
+          <div>
+
+            <h1 className="text-3xl font-bold">
+                정렬된 그리드, <br /> 균형 잡힌 디자인.
+            </h1>
+            
+          </div>
+
+          <div className="w-[53%]">
+
+            <img src="/mockup/peninsula/grid.png"/>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <section className="w-full bg-[#F5F5F5] pb-[250px] flex flex-row justify-center items-center">
+
+        <div className=" max-w-[1300px] flex flex-row justify-between items-center">
+
+          <div>
+
+            <h1 className="text-3xl font-bold">
+                브랜드 컬러 그대로, <br /> 신뢰와 일관성을 담다.
+            </h1>
+            
+          </div>
+
+          <div className="w-[50%]">
+
+            <img src="/mockup/peninsula/color.png"/>
+
+          </div>
+        
+        </div>
+
+      </section>
+
+
+
+
+
+
+      <section className="w-[1300px] pt-[250px] pb-[250px] flex flex-col items-left justify-center">
+        
+
+        <div className="flex flex-col gap-y-[15px]">
+          <div className="text-4xl font-bold flex">Simplify to Amplify</div>
+          <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">솔루션 2 : 정보 구조 최적화</div>
+        </div>
+
+        
+        <div className="flex flex-row justify-between items-center pb-[80px]">
+
+          <img className="w-[70%]" src="/mockup/peninsula/pt1.png"/>
+          <h1 className="w-[30%] flex justify-center text-3xl font-bold">
+                단순한 레이아웃, <br /> 최소한의 텍스트.
+          </h1>
+
+        </div>
+
+
+        <div className="flex flex-row justify-between items-center">
+
+          <h1 className="w-[30%] flex justify-center text-3xl font-bold">
+                직관적인 요소, <br /> 직관적인 동작.
+          </h1>
+          <img className="w-[70%]" src="/mockup/peninsula/pt2.png"/>
+
+        </div>
+
+      </section>
+
+
+
+
+      <section className="w-full flex flex-col bg-[#F5F5F5] pt-[250px] pb-[250px] justify-center items-center">
+
+        <div>
+
+        <div className="flex flex-col gap-y-[15px]">
+          <div className="text-4xl font-bold flex">Almost real</div>
+          <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">프로토타입 살펴보기</div>
+        </div>
+
+
+        <iframe 
+          className="border border-gray-300 rounded-lg"
+          width="1300" 
+          height="720"
+          src="https://embed.figma.com/proto/0D2OMXabAU24ICscXuoRZY/Peninsula-Phase-1?page-id=0%3A1&node-id=1-930&viewport=394%2C197%2C0.26&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A930&show-proto-sidebar=1&embed-host=share"
+          allowFullScreen
+        />
+
+        </div>
+
+
+      </section>
+
+
     </main>
   );
 }
+
+
+
+
+
+
 
 // 📌 1. 숫자 섹션
 const StatsSection = () => (
@@ -182,11 +372,11 @@ const StatsSection = () => (
 
 // 📌 2. 경쟁자 분석 섹션
 const CompetitorAnalysis = () => (
-  <div className="w-[1300px]">
-          <div className="h-screen flex flex-col items-center justify-center gap-y-20">
+  <div>
+          <div className="w-full h-screen flex flex-col items-center justify-center gap-y-20">
             <h2 className="text-3xl font-bold">경쟁자 분석을 통한 아이디어 도출</h2>
             <div className="flex flex-col items-center justify-between md:flex-row space-y-8 md:space-y-0 md:space-x-16">
-              <div className="space-y-10 w-[600px]">
+              <div className="space-y-10 w-[450px]">
                 <h3 className="text-lg font-semibold flex items-center">
                   <img src="/mockup/peninsula/citation.png" className="h-[2rem]"/>
                 </h3>
@@ -216,7 +406,7 @@ const CompetitorAnalysis = () => (
                 </p>
               </div>
   
-              <div className="space-y-10 w-[45%]">
+              <div className="space-y-10 w-[450px]">
                 <h3 className="text-lg font-semibold flex items-center">
                   <img src="/mockup/peninsula/hero.png" className="h-[2rem]" />
                 </h3>
@@ -260,14 +450,14 @@ const CompetitorAnalysis = () => (
 
 // 📌 3. 그래프 섹션
 const GraphSection = () => (
-  <div className="w-[1300px] flex flex-col justify-center items-left space-y-30 h-[70vh]">
+  <div className="w-full flex flex-col justify-center items-left space-y-30 h-[70vh]">
 
     <div className="flex flex-col items-center align-middle justify-between space-y-10">
       <h2 className="text-3xl font-bold">
         사용자를 위한 디자인. <br /> 사용자 의견으로부터.
       </h2>
       <div className="flex flex-row items-center space-x-10">
-        <div className="relative w-64 h-64">
+        <div className="w-64 h-64">
           <svg className="w-full h-full" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="40" fill="none" stroke="#ddd" strokeWidth="8" />
             <circle cx="50" cy="50" r="40" fill="none" stroke="#1E40AF" strokeWidth="8" strokeDasharray="80 100" />

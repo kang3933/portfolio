@@ -4,31 +4,41 @@ export default function Home(){
   return (
     <>
     <main>
-      <div className='project_hero'>
-        <h1>Projects</h1>
-        <h1></h1>
-      </div>
-      <div className='flex flex-row gap-8 pb-[10vh]'>
+      <section className="w-full flex flex-col justify-center items-center">
+        <div className="w-full max-w-[1300px]">
 
-        <div className='project_project_section'>
+        <div className='project_hero flex items-center justify-center'>
+          <h1>Projects</h1>
+          <h1></h1>
+        </div>
+        <div className='flex flex-col gap-[10rem] pb-[10vh]'>
+
+          <div className='project_project_section'>
+
+              <ProjectCard
+                title='Peninsula Group Limited'
+                description='리브랜딩, 새로운 웹사이트'
+                imageSrc='./mockup/peninsula/3.png'
+                link='/Projects/Peninsula'
+              />
+
+          </div>
+          <div className='project_project_section'>
 
             <ProjectCard
-              title='Peninsula Group Limited'
-              imageSrc='./mockup/peninsula/1.png'
-              link='/Projects/Peninsula'
+              title='Beinc'
+              description='이제는 새로운 웹사이트가 필요할 때'
+              imageSrc='./mockup/beinc/Mockup.png'
+              link='/Projects/Beinc'
             />
 
+          </div>
         </div>
-        <div className='project_project_section'>
-
-          <ProjectCard
-            title='Beinc'
-            imageSrc='./mockup/peninsula/1.png'
-            link='/Projects/Peninsula'
-          />
 
         </div>
-      </div>
+
+
+      </section>
 
     </main>
     </>
