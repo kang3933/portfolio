@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from 'next/image';
 
 
 
@@ -545,7 +546,7 @@ export default function Home() {
               <h1 className="pb-[1rem]">브랜드 일관성 유지</h1>
               <ul className="list-disc font-medium text-xl">
               <li>기존 디자인 가이드라인을 90% 이상 준수, 내부 평가에서 높은 점수 획득</li>
-              <li>사용자 피드백에서 "브랜드 이미지가 일관되게 유지됐다"는 긍정적인 반응 다수</li>
+              <li>{'사용자 피드백에서 "브랜드 이미지가 일관되게 유지됐다"는 긍정적인 반응 다수'}</li>
               </ul>
 
 
