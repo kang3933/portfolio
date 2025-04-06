@@ -5,7 +5,10 @@ export default function Home(){
     <main>
       <div className = 'about_content_wrapper'>
         <div className='about_hero'>
-          <h1>안녕하세요, 강현진 입니다.</h1>
+          <h1>모든 경험을 소중하게.</h1>
+          <p className="font-medium pt-[1rem] text-[16px]">
+          단 하나의 경험도 소중하지 않았던게 없었듯.<br/>
+          경험의 소중함을 알고 그 소중함을 디자인을 하는 디자이너가 목표입니다.</p>
         </div>
 
         <div className='about_information'>

@@ -282,7 +282,7 @@ export default function Home() {
         
 
         <div className="flex flex-col gap-y-[15px]">
-          <div className="text-4xl font-bold flex">Simplify to Amplify</div>
+          <div className="text-5xl font-bold flex">Simplify to Amplify</div>
           <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">솔루션 2 : 정보 구조 최적화</div>
         </div>
 
@@ -308,10 +308,337 @@ export default function Home() {
 
       </section>
 
+      <section className="w-full bg-[#F5F5F5] pt-[250px] pb-[250px] flex flex-col justify-center items-center">
+
+          <div className="flex flex-col w-full max-w-[1300px] justify-center pb-[5rem]">
+
+          <div className="text-[1rem] font-medium text-[#A9A9A9] pb-[1rem]">
+          솔루션 2-1 : A/B 테스팅을 통한 디자인 개선
+          </div>
+
+            <div className="text-5xl font-bold pb-[2rem]">
+              Journey to Excellence
+            </div>
+            <div className="text-[1rem] font-normal">
+            각 Phase는 반복적인 revision을 통해 디자인 개선이 이뤄졌습니다. 테스팅 팀을 통한 꾸준한 A/B 테스팅도 진행했습니다.
+            <br/>아래의 예시는 Phase 1에서 디자인한 전체 페이지 Brief 섹션 디자인 수정 과정입니다.
+            </div>
+
+          </div>
+
+          <div className="flex flex-col">
+
+            <div className="w-full max-w-[1300px] flex flex-row pb-[160px] justify-center items-center">
+
+              <div className="w-[40%] flex flex-col">
+                <div className="text-[#A9A9A9] text-2xl font-semibold pb-4">
+                  기존 웹사이트
+                </div>
+                <div className="gap-1 text-[#131313] text-xl font-semibold">
+                  CTA의 부재.<br/>
+                  너무 많은 정보량.
+                </div>
+              </div>
+
+              <div className="w-[60%]">
+                <img src="/mockup/peninsula/ab1.png"/>
+
+              </div>
+
+            </div>
+
+            <div className="w-full max-w-[1300px] flex flex-row pb-[160px] justify-center items-center">
+
+              <div className="w-[40%] flex flex-col">
+                <div className="text-[#A9A9A9] text-2xl font-semibold pb-4">
+                  Revision 1
+                </div>
+                <div className="gap-1 text-[#131313] text-xl font-semibold">
+                  동일한 강조색은 주목도 분산.<br/>
+                  작은 글씨는 큰 글씨로 눈에 띄게.
+                </div>
+              </div>
+
+              <div className="w-[60%]">
+              <img src="/mockup/peninsula/ab2.png"/>
+
+              </div>
+
+            </div>
+
+            <div className="w-full max-w-[1300px] flex flex-row pb-[160px] justify-center items-center">
+
+            <div className="w-[40%] flex flex-col">
+              <div className="text-[#A9A9A9] text-2xl font-semibold pb-4">
+                Revision 2
+              </div>
+                <div className="gap-1 text-[#131313] text-xl font-semibold">
+                여전히 많은 텍스트, 중요한건 짧고 간결하게 강조.<br/>
+                카드섹션 분리감 필요.
+                </div>
+            </div>
+
+              <div className="w-[60%]">
+                <img src="/mockup/peninsula/ab3.png"/>
+
+              </div>
+
+            </div>
+
+            <div className="w-full max-w-[1300px] flex flex-row justify-center items-center">
+
+              <div className="w-[40%] flex flex-col">
+                <div className="text-[#A9A9A9] text-2xl font-semibold pb-4">
+                  최종 디자인
+                </div>
+                  <div className="gap-1 text-[#131313] text-xl font-semibold pb-4">
+                  텍스트 섹션의 문구를 최대한 축약.<br/>
+                  CTA버튼 색을 Secondary accent로 변경해 강조색과 구분.<br/>
+                  아이콘 크기를 축소해 시각적 방해 없이 섹션 구분 용도로 활용.
+                  </div>
+              </div>
+
+              <div className="w-[60%]">
+                <img src="/mockup/peninsula/ab4.png"/>
+
+              </div>
+
+            </div>
+
+          </div>
+
+      </section>
+
+
+
+
+      <section className="w-full flex flex-col bg-[#FFFFFF] pt-[250px] pb-[250px] justify-center items-center">
+
+      <div className="flex flex-col w-full max-w-[1300px] justify-center pb-[5rem]">
+
+        <div className="text-[1rem] font-medium text-[#A9A9A9] pb-[1rem]">
+          솔루션 2-2 : 사용자 흐름에 맞춘 컴포넌트 재배치
+        </div>
+        
+        <div className="text-5xl font-bold pb-[2rem]">
+          직관적인 디자인을 고민하다
+        </div>
+        <div className="text-[1rem] font-normal">
+        각 컴포넌트에 우선순위를 매기고, 사용자의 행동을 유도할 수 있는 디자인을 고민했습니다.
+        <br/>아래 디자인은 Phase 2의 Contact page 모바일 버전의 CTA 버튼 동작 방식을 설계하고 최적화 하는 과정입니다.
+        </div>
+
+      </div>
+
+      <div className="flex flex-row justify-between items-center w-full max-w-[1300px]">
+
+        <img src="/mockup/peninsula/m11.png" className="w-[30%]"/>
+        <div className="flex flex-col w-[40%]">
+
+          <div className="text-3xl font-bold pb-2">1. 국가가 선택되어있지 않은 상태</div>
+          <div className="text-xl font-normal">호주와 뉴질랜드의 연락처가 다르기 때문에, enquiry form을 여는 버튼은 국가 선택을 하기 전까지 비활성화 되어있습니다.</div>
+
+        </div>
+
+      </div>
+
+      <div className="flex flex-row justify-between items-center w-full max-w-[1300px]">
+
+        <div className="flex flex-col w-[40%]">
+
+          <div className="text-3xl font-bold pb-2">2. 국가가 선택되었을 때 (Design 1)</div>
+          <div className="text-xl font-normal">국가가 선택되었을 때, Enquire today 버튼이 활성화 됩니다. 강조 텍스트와 충돌을 피하기 위해 Secondary accent color을 사용했습니다.</div>
+
+        </div>
+        <img src="/mockup/peninsula/m12.png" className="w-[30%]"/>
+
+      </div>
+
+      <div className="flex flex-row justify-between items-center w-full max-w-[1300px]">
+
+        <img src="/mockup/peninsula/m13.png" className="w-[30%]"/>
+
+        <div className="flex flex-col w-[40%]">
+
+          <div className="text-3xl font-bold pb-2">3. 국가가 선택되었을 때 (Final design)</div>
+          <div className="text-xl font-normal">CTA 섹션의 흐름에 맞춰 국가 선택 버튼을 상단에 배치했으며, Enquire today 버튼의 강조를 위해 국가 선택 버튼 색상을 아웃라인 색으로 대체하였습니다.</div>
+
+        </div>
+
+
+      </div>
+
+
+
+      </section>
 
 
 
       <section className="w-full flex flex-col bg-[#F5F5F5] pt-[250px] pb-[250px] justify-center items-center">
+
+        <div className="w-full max-w-[1300px] flex flex-col">
+
+          <div className="flex flex-col gap-y-[15px]">
+            <div className="text-5xl font-bold flex">검증</div>
+            <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">프로젝트 효과 확인</div>
+          </div>
+
+          <div className="text-2xl font-bold pb-[180px]">
+
+            <h1 className="pb-[2rem]">브랜드 일관성 유지 검증</h1>
+            <ul className="list-disc font-medium text-xl">
+              <li>기존 Peninsula Group의 디자인 가이드라인을 기반으로 컬러, 타이포그래피, UI 컴포넌트 적용</li>
+              <li>스타일 가이드 문서(Brand guide)와 비교하여 일관성 점검</li>
+              <li>사용자 설문조사 결과, 약 80%의 응답자가 새로운 디자인이 브랜드 일관성을 유지하고 있다고 평가</li>
+              <li>브랜드 아이덴티티에 대해 대다수의 사용자가 직관적으로 인식할 수 있다고 긍정적 평가</li>
+            </ul>
+
+          </div>
+
+
+          <div className="text-2xl font-bold flex flex-col items-center pb-[180px]">
+
+            <div>
+
+             <h1 className="pb-[2rem]">정보 구조 개선 효과 검증</h1>
+             <p className="font-medium text-xl">리디자인 후 A/B 테스트를 통해 기존과 새 디자인의 성과 비교 분석</p>
+            
+
+            </div>
+
+
+            <img src="/mockup/peninsula/stats.png" className="w-[50%]"></img>
+
+          </div>
+
+          <div className="text-2xl font-bold flex flex-col items-end pb-[200px]">
+
+            <div>
+
+            <h1 className="pb-[2rem]">CTA 배치 및 Form UX 개선 효과 검증</h1>
+            <ul className="list-disc font-medium text-xl">
+              <li>CTA 버튼 클릭률 기존 대비 18% 증가</li>
+              <li>Form 입력 완료율이 10% 증가</li>
+              <li>모바일에서 버튼 크기 및 위치 개선 후 클릭률이 약 12% 상승</li>
+            </ul>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="w-full max-w-[1300px] flex flex-col">
+
+          <div className="flex flex-col gap-y-[15px]">
+            <div className="text-5xl font-bold flex">결과</div>
+            <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">수치와 피드백</div>
+          </div>
+
+
+          <div className="text-2xl font-bold pb-[200px] flex flex-col gap-y-10">
+
+
+            <div className="w-full">
+
+              <h1 className="pb-[1rem]">브랜드 일관성 유지</h1>
+              <ul className="list-disc font-medium text-xl">
+              <li>기존 디자인 가이드라인을 90% 이상 준수, 내부 평가에서 높은 점수 획득</li>
+              <li>사용자 피드백에서 "브랜드 이미지가 일관되게 유지됐다"는 긍정적인 반응 다수</li>
+              </ul>
+
+
+            </div>
+
+            <div className="w-full">
+
+              <h1 className="pb-[1rem]">정보 구조 개선</h1>
+              <ul className="list-disc font-medium text-xl">
+              <li>기존 디자인 가이드라인 준수, 클라이언트 내부 평가에서 긍정적 반응</li>
+              <li>하지만 일부 사용자는 서비스 비교 섹션에서 여전히 디자인적 불편함을 느낌</li>
+              </ul>
+
+
+            </div>
+            <div className="w-full">
+
+              <h1 className="pb-[1rem]">전환률 개선</h1>
+              <ul className="list-disc font-medium text-xl">
+              <li>CTA 버튼 클릭률 2.3% 증가</li>
+              <li>폼 입력 완료율 10% 증가, 하지만 여전히 이탈률이 높은 편</li>
+              </ul>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div className="w-full max-w-[1300px] flex flex-col items-end">
+
+        <div>
+
+          <div className="flex flex-col gap-y-[15px]">
+            <div className="text-5xl font-bold flex">회고</div>
+            <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">프로젝트를 돌아보다</div>
+          </div>
+
+
+          <div className="text-2xl font-bold pb-[180px] flex flex-col gap-y-10">
+
+
+            <div className="w-full">
+
+              <h1 className="pb-[1rem]">성공 요인</h1>
+              <ul className="list-disc font-medium text-xl">
+              <li>디자인 일관성 유지: 브랜드 가이드라인을 철저히 적용하여 Peninsula Group의 정체성 유지</li>
+              <li>정보 구조 최적화: 주요 콘텐츠를 쉽게 탐색할 수 있도록 레이아웃을 단순화</li>
+              <li>CTA 배치 개선: 사용자 행동 데이터를 기반으로 폼과 버튼을 최적의 위치에 배치</li>
+              </ul>
+
+
+            </div>
+
+            <div className="w-full">
+
+              <h1 className="pb-[1rem]">아쉬운 점</h1>
+              <ul className="list-disc font-medium text-xl">
+              <li>정보 탐색의 완전한 직관성 부족: 서비스 비교 섹션의 가독성과 내비게이션이 여전히 개선 필요</li>
+              <li>모바일 UX 최적화 부족: 버튼 크기 및 가독성 문제로 인해 일부 사용자 경험 저하</li>
+              <li>전환율 목표 미달: CTA 클릭률 및 폼 완성률이 증가했지만, 기대만큼 큰 수치에는 미치지 못함</li>
+              </ul>
+
+
+            </div>
+            <div className="w-full">
+
+              <h1 className="pb-[1rem]">향후 개선 방향</h1>
+              <ul className="list-disc font-medium text-xl">
+              <li>내비게이션 구조 추가 개선: 서비스 비교 섹션의 접근성을 높이기 위한 UI 개선</li>
+              <li>모바일 UX 보완: 양 옆 여백과 버튼 크기, 색상 대비 조정 및 폼 UX 추가 최적화</li>
+              <li>추가적인 사용자 테스트 진행: 다양한 유저 그룹을 대상으로 A/B 테스트 확장 및 샘플 수 확보</li>
+              </ul>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        </div>
+
+      </section>
+
+
+
+
+      <section className="w-full flex flex-col bg-[#FFFFFF] pt-[250px] pb-[250px] justify-center items-center">
 
         <div>
 
@@ -319,15 +646,75 @@ export default function Home() {
           <div className="text-4xl font-bold flex">Almost real</div>
           <div className="text-2xl text-[#A9A9A9] pb-[80px] font-semibold flex">프로토타입 살펴보기</div>
         </div>
+        
+        <div className="text-2xl font-bold pb-[1rem]">
 
+          <h1>Phase 1</h1>
+
+        </div>
 
         <iframe 
           className="border border-gray-300 rounded-lg"
           width="1300" 
           height="720"
-          src="https://embed.figma.com/proto/0D2OMXabAU24ICscXuoRZY/Peninsula-Phase-1?page-id=0%3A1&node-id=1-930&viewport=394%2C197%2C0.26&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A930&show-proto-sidebar=1&embed-host=share"
+          src="https://embed.figma.com/proto/0D2OMXabAU24ICscXuoRZY/Peninsula-Phase-1?page-id=0%3A1&node-id=1-930&p=f&viewport=516%2C25%2C0.1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A930&show-proto-sidebar=1&embed-host=share"
           allowFullScreen
         />
+
+        </div>
+
+        <div>
+
+          <div className="text-2xl font-bold pt-[80px] pb-[1rem]">
+
+            <h1>Phase 2</h1>
+
+          </div>
+
+          <iframe 
+            className="border border-gray-300 rounded-lg"
+            width="1300" 
+            height="720"
+            src="https://embed.figma.com/proto/JTaRSI9DjBHTL8A5Er7Qe6/Peninsula-Phase-2?page-id=0%3A1&node-id=1-1040&starting-point-node-id=1%3A1040&scaling=scale-down-width&content-scaling=fixed&embed-host=share"
+            allowFullScreen
+          />
+
+        </div>
+
+
+        <div>
+
+          <div className="text-2xl font-bold pt-[80px] pb-[1rem]">
+
+            <h1>Phase 3</h1>
+
+          </div>
+
+          <iframe 
+            className="border border-gray-300 rounded-lg"
+            width="1300" 
+            height="720"
+            src="https://embed.figma.com/proto/O3oSX0bnd61oN5k1pp7EHX/Peninsula-Phase-3?page-id=0%3A1&node-id=1-515&p=f&viewport=259%2C25%2C0.12&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A515&show-proto-sidebar=1&embed-host=share"
+            allowFullScreen
+          />
+
+        </div>
+
+        <div>
+
+          <div className="text-2xl font-bold pt-[80px] pb-[1rem]">
+
+            <h1>Phase 4</h1>
+
+          </div>
+
+          <iframe 
+            className="border border-gray-300 rounded-lg"
+            width="1300" 
+            height="720"
+            src="https://embed.figma.com/proto/7WAVFCyZjtJg6isNKbGaA5/Peninsula-Phase-4?page-id=0%3A1&node-id=1-1634&p=f&viewport=792%2C996%2C0.18&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A1634&show-proto-sidebar=1&embed-host=share"
+            allowFullScreen
+          />
 
         </div>
 

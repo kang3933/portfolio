@@ -58,14 +58,14 @@ const Header = () => {
             <Link key={item.id} href={item.href} className="relative group">
               <span
                 className={`text-base font-semibold leading-6 cursor-pointer transition-all ${
-                  isActive ? "text-[#494FFF]" : "text-black"
+                  isActive ? "text-[#7B0000]" : "text-black"
                 }`}
               >
                 {item.name}
               </span>
               {/* 밑줄 애니메이션 */}
               <span
-                className={`absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 h-[2px] bg-[#494FFF] transition-all duration-300 ease-in-out group-hover:w-full ${
+                className={`absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 h-[2px] bg-[#7B0000] transition-all duration-300 ease-in-out group-hover:w-full ${
                   isActive ? "w-full" : "w-0"
                 }`}
               />
@@ -78,7 +78,7 @@ const Header = () => {
     {/* CTA 버튼 */}
     <Link
       href="/Resume"
-      className="w-[132px] h-[38px] bg-[#494FFF] text-white text-[12px] font-semibold flex items-center justify-center rounded-full shadow-md transition-[box-shadow] duration-[300ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:shadow-[0_0_10px_rgba(73,79,255,0.6)]"
+      className="w-[132px] h-[38px] bg-[#7B0000] text-white text-[12px] font-semibold flex items-center justify-center rounded-full shadow-md transition-[box-shadow] duration-[300ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:shadow-[0_0_10px_rgba(123,0,0,0.6)]"
     >
       Resume
     </Link>
