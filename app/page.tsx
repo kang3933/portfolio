@@ -5,7 +5,7 @@ export default function Home(){
     <main>
       <section className="w-full flex flex-row justify-center items-center">
         
-        <div className="w-full max-w-[1300px] pt-[10rem] flex flex-row justify-between">
+        <div className="w-full h-screen max-w-[1300px] flex flex-row justify-between items-center">
 
           <div className="w-full flex flex-col justify-between">
 
@@ -15,7 +15,7 @@ export default function Home(){
 
             <div className='w-full  text-2xl font-bold font-[pretendard]'>
 
-              <p>
+              <p className="text-[#A9A9A9]">
                 anjrk
               </p>
 
