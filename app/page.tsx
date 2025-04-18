@@ -34,7 +34,7 @@ export default function Home(){
                   />
                 </span>
                 TO <br />
-                HYUNJIN KANG's <br />
+                HYUNJIN KANG&apos;s <br />
                 PORTFOLIO
               </h1>
             </div>
