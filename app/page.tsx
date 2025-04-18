@@ -1,7 +1,7 @@
 "use client"
 
 import { Typewriter } from "react-simple-typewriter"
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 import {FiPlus} from "react-icons/fi";
 import { FiDownload } from "react-icons/fi";
@@ -24,7 +24,7 @@ export default function Home(){
               <h1>
                 <span className="text-[#0063FF]">
                   <Typewriter
-                    words={['WELCOME']}
+                    words={["WELCOME"]}
                     loop={Infinity}
                     cursor
                     cursorStyle="_"
@@ -39,7 +39,7 @@ export default function Home(){
               </h1>
             </div>
 
-            <div className='w-full  text-xl font-normal font-[pretendard]'>
+            <div className="w-full  text-xl font-normal font-[pretendard]">
 
               <div className="flex justify-between">
                 
@@ -71,15 +71,15 @@ export default function Home(){
         <div className="flex w-full justify-between pl-[5%] pr-[5%]">
 
           <div className="w-50% flex flex-row justify-between">
-          <div className = 'about_content_wrapper'>
+          <div className = "about_content_wrapper">
 
-        <div className='w-full h-full pt-[5%] pb-[5%] flex flex-col justify-between'>
+        <div className="-full h-full pt-[5%] pb-[5%] flex flex-col justify-between">
 
-          <div className='aboutTitles gap-[2rem]'>
+          <div className="aboutTitles gap-[2rem]">
             <div className="text-[4rem] font-bold font-[Pretendard]">
               <span className="text-[#F5F5F5]">
                   <Typewriter
-                    words={['ABOUT']}
+                    words={["ABOUT"]}
                     loop={Infinity}
                     cursor
                     cursorStyle="_"
@@ -89,62 +89,62 @@ export default function Home(){
                   />
               </span>
             </div>
-            <div className='aboutContentWrapper'>
-              <div className='text-[#0063FF] text-[1rem] font-bold font-[Pretendard]'>
+            <div className="aboutContentWrapper">
+              <div className="text-[#0063FF] text-[1rem] font-bold font-[Pretendard]">
               EDUCATION
               </div>
-              <div className='flex flex-col gap-3'>
-                <div className='flex flex-col gap-1'>
-                  <div className='text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]'>
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-1">
+                  <div className="text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]">
                     Queensland University of Technology
                   </div>
-                  <div className='text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]'>
+                  <div className="text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]">
                     컴퓨터 과학(Computer Science) & 시각디자인(Visual Communication) 복수 전공 
                   </div>
                 </div>
-                <div className='text-[#F5F5F5] text-[1rem] font-bold font-[Pretendard]'>
+                <div className="text-[#F5F5F5] text-[1rem] font-bold font-[Pretendard]">
                   Craigslea State High School
                 </div>
-                <div className='text-[#F5F5F5] text-[1rem] font-bold font-[Pretendard]'>
+                <div className="text-[#F5F5F5] text-[1rem] font-bold font-[Pretendard]">
                   중산 고등학교
                 </div>
               </div>
             </div>
 
-            <div className='aboutContentWrapper'>
-              <div className='text-[#0063FF] text-[1rem] font-bold font-[Pretendard]'>
+            <div className="aboutContentWrapper">
+              <div className="text-[#0063FF] text-[1rem] font-bold font-[Pretendard]">
               EXPERIENCE
               </div>
-              <div className='flex flex-col gap-3'>
-                <div className='experienceContainer'>
-                  <div className='text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]'>
+              <div className="flex flex-col gap-3">
+                <div className="experienceContainer">
+                  <div className="text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]">
                   Beinc - Web Designer
                   </div>
-                  <div className='text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]'>
+                  <div className="text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]">
                     2024.04-2025.01
                   </div>
                 </div>
-                <div className='experienceContainer'>
-                  <div className='text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]'>
+                <div className="experienceContainer">
+                  <div className="text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]">
                     NKR
                   </div>
-                  <div className='text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]'>
+                  <div className="text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]">
                   2023.06-2023.07
                   </div>
                 </div>
-                <div className = 'experienceContainer'>
-                  <div className='text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]'>
+                <div className = "experienceContainer">
+                  <div className="text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]">
                     Eighty8 Media - Graphic Design Intern
                   </div>
-                  <div className='text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]'>
+                  <div className="text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]">
                   2021.03-2021.05
                   </div>
                 </div>
-                <div className='experienceContainer'>
-                  <div className='text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]'>
+                <div className="experienceContainer">
+                  <div className="text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]">
                     US 8th Army Korean Augmentation to the United States Army
                   </div>
-                  <div className='text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]'>
+                  <div className="text-[#A0A0A0] text-[0.85rem] font-normal font-[Pretendard]">
                   2019.01-2020.08
                   </div>
                 </div>
@@ -152,18 +152,18 @@ export default function Home(){
 
             </div>
 
-            <div className='aboutContentWrapper'>
-            <div className='text-[#0063FF] text-[1rem] font-bold font-[Pretendard]'>
+            <div className="aboutContentWrapper">
+            <div className="text-[#0063FF] text-[1rem] font-bold font-[Pretendard]">
               TOOLS
             </div>
 
-            <div className='flex flex-col gap-6'>
+            <div className="flex flex-col gap-6">
               {/* 디자인 툴 섹션션 */}
-              <div className= 'toolsDescription gap-4'>
-                <div className='text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]'>
+              <div className= "toolsDescription gap-4">
+                <div className="text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]">
                   디자인
                 </div>
-                <div className='aboutLogos grid grid-cols-8 gap-4'>
+                <div className="aboutLogos grid grid-cols-8 gap-4">
                   <img src="/aboutIcons/illustrator.png" alt="illustrator" className="w-8 h-8" />
                   <img src="/aboutIcons/photoshop.png" alt="Photoshop" className="w-8 h-8" />
                   <img src="/aboutIcons/premierepro.png" alt="premierepro" className="w-8 h-8" />
@@ -173,11 +173,11 @@ export default function Home(){
               </div>
 
               {/* 디자인 툴 섹션션 */}
-              <div className= 'toolsDescription gap-4'>
-                <div className='text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]'>
+              <div className= "toolsDescription gap-4">
+                <div className="text-[#F5F5F5] text-[1rem] font-semibold font-[Pretendard]">
                   개발
                 </div>
-                <div className='aboutLogos grid grid-cols-8 gap-4'>
+                <div className="aboutLogos grid grid-cols-8 gap-4">
                   <img src="/aboutIcons/webflow.png" alt="webflow" className="w-8 h-8" />
                   <img src="/aboutIcons/react.png" alt="react" className="w-8 h-8" />
                   <img src="/aboutIcons/next.png" alt="next" className="w-8 h-8" />
@@ -225,7 +225,7 @@ export default function Home(){
           <div className="text-[4rem] font-bold font-[Pretendard]">
               <span className="text-[#F5F5F5]">
                   <Typewriter
-                    words={['PROJECTS']}
+                    words={["PROJECTS"]}
                     loop={Infinity}
                     cursor
                     cursorStyle="_"
@@ -236,7 +236,7 @@ export default function Home(){
               </span>
           </div>
 
-          <div className='flex flex-col gap-[2rem]'>
+          <div className="flex flex-col gap-[2rem]">
 
             <div className="w-full h-[60vh] p-[10%] flex flex-row justify-between items-center rounded-[1rem] bg-[#3A3A3A]">
               <div className="flex flex-col items-center">
@@ -356,7 +356,7 @@ export default function Home(){
     <div className="text-[4rem] font-bold font-[Pretendard]">
       <span className="text-[#F5F5F5]">
         <Typewriter
-          words={['DOCUMENTS']}
+          words={["DOCUMENTS"]}
           loop={Infinity}
           cursor
           cursorStyle="_"
