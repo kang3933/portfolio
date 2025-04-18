@@ -70,11 +70,11 @@ export default function Home() {
   return (
     <main className="w-full bg-white flex font-[pretendard] flex-col items-center">
 
-      <div className="pt-[4rem] w-full pb-0 flex justify-center items-center overflow-hidden">
+      <div className="w-full pb-0 flex justify-center items-center overflow-hidden">
         <img className="h-[90vh] w-screen object-cover" src="/mockup/peninsula/2.png"/>
       </div>
 
-      <div className="w-full bg-white pl-[5%] pr-[5%] pt-[200px] pb-[200px] m-0 flex justify-center">
+      <div className="w-full bg-white pl-[5%] pr-[5%] pt-[50px] pb-[50px] m-0 flex justify-center">
         <div className="max-w-[1300px] flex flex-row justify-between w-full">
           <div className='projectDetail w-[50%] '>
             <h1>Peninsula Group Limited</h1>
@@ -92,7 +92,7 @@ export default function Home() {
 
 
 
-      <section className="w-full max-w-[100%] bg-[#F5F5F5] p-[5%] flex justify-center items-center h-[100vh]">
+      <section className="w-full max-w-[100%] bg-[#F5F5F5] p-[5%] flex justify-center items-center h-[65vh]">
         
         <button
           onClick={prevSlide}
@@ -127,7 +127,7 @@ export default function Home() {
 
 
 
-      <section className="w-full flex justify-center font-[pretendard] items-center h-[60vh] space-y-10 px-5 my-20">
+      <section className="w-full flex justify-center font-[pretendard] items-center h-[40vh] space-y-10 px-5 my-20">
       <div className="w-full max-w-[1300px] flex flex-row justify-between items-start">
         {/* As-Is 아코디언 메뉴 */}
         <div className="w-[45%] space-y-4">

@@ -80,6 +80,7 @@ font-family: 'Pretendard', sans-serif;
   justify-content: space-between;
   gap: 20px;
   align-items: stretch;
+  border-radius: 1rem;
 }
 
 .project_design {
@@ -137,8 +138,6 @@ font-family: 'Pretendard', sans-serif;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding-top: 15vh;
-  padding-bottom: 13vh;
   height: auto;
   display: flex;
   justify-content: center;
@@ -170,6 +169,7 @@ font-family: 'Pretendard', sans-serif;
 .aboutContentWrapper {
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
   
 }
 
