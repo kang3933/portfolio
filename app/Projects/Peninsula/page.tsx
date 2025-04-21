@@ -11,8 +11,8 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 
 export default function Home() {
-  const [index, setIndex] = useState(0);
-  //const [dropdownOpen, setDropdownOpen] = useState(false); // State for the dropdown visibility
+//  const [index, setIndex] = useState(0);
+//   const [dropdownOpen, setDropdownOpen] = useState(false); // State for the dropdown visibility
   
   const [activeAsIs, setActiveAsIs] = useState<number | null>(null);   // As-Is 아코디언 상태
   const [activeToBe, setActiveToBe] = useState<number | null>(null);  // To-Be 아코디언 상태
@@ -55,21 +55,21 @@ export default function Home() {
     }
   ];
 
-  const toggleAsIs = (index:number) => {
-    setActiveAsIs(activeAsIs === index ? null : index); // 클릭한 항목이 이미 활성화되어 있으면 비활성화
-  };
+    const toggleAsIs = (index:number) => {
+      setActiveAsIs(activeAsIs === index ? null : index); // 클릭한 항목이 이미 활성화되어 있으면 비활성화
+    };
 
-  const toggleToBe = (index:number) => {
-    setActiveToBe(activeToBe === index ? null : index); // 클릭한 항목이 이미 활성화되어 있으면 비활성화
-  };
+    const toggleToBe = (index:number) => {
+      setActiveToBe(activeToBe === index ? null : index); // 클릭한 항목이 이미 활성화되어 있으면 비활성화
+    };
 
-  const sections = [<StatsSection key="1" />, <CompetitorAnalysis key="2" />, <GraphSection key="3" />];
+    const sections = [<StatsSection key="1" />, <CompetitorAnalysis key="2" />, <GraphSection key="3" />];
 
-  const nextSlide = () => setIndex((prev) => (prev + 1) % sections.length);
-  const prevSlide = () => setIndex((prev) => (prev - 1 + sections.length) % sections.length);
+    // const nextSlide = () => setIndex((prev) => (prev + 1) % sections.length);
+    // const prevSlide = () => setIndex((prev) => (prev - 1 + sections.length) % sections.length);
 
-  // Toggle dropdown visibility
-  //const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+    // Toggle dropdown visibility
+    // const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
     <main className="w-full bg-white flex font-[Pretendard] flex-col items-center overflow-hidden">
