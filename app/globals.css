@@ -226,11 +226,9 @@ font-family: 'Pretendard', sans-serif;
 }
 
 .projectDetail {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
   font-size: 36px;
   font-weight: 700;
-  font-family: Pretendard Variable;
+  font-family: Pretendard;
   text-align:left;
   align-content: center;
 }

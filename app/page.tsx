@@ -43,17 +43,17 @@ export default function Home(){
 
               <div className="flex justify-between flex-col sm:flex-row gap-2 sm:gap-0">
 
-                <a href="tel:+61491183900" className="flex items-center gap-2 text-[#0063FF] text-[1rem]">
+                <a href="tel:+61491183900" className="flex items-center gap-2 text-[#F5F5F5] text-[1rem]">
                   <Image src="/mockup/au.png" alt="Australia Flag" width={20} height={20} />
                   +61 491 183 900
                 </a>
                 
-                <a href="mailto:henryk3933@gmail.com" className="flex items-center gap-2 text-[#0063FF] text-[1rem]">
+                <a href="mailto:henryk3933@gmail.com" className="flex items-center gap-2 text-[#F5F5F5] text-[1rem]">
                   <Image src="/mockup/email.png" alt="email icon" width={20} height={20} />
                   henryk3933@gmail.com
                 </a>
 
-                <a href="tel:+821073443933" className="flex items-center gap-2 text-[#0063FF] text-[1rem]">
+                <a href="tel:+821073443933" className="flex items-center gap-2 text-[#F5F5F5] text-[1rem]">
                   <Image src="/mockup/kr.png" alt="Korea Flag" width={20} height={20} />
                   +82 10 7344 3933
                 </a>
