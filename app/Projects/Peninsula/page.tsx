@@ -101,12 +101,12 @@ export default function Home() {
 
       <div className="w-full bg-white pl-[5%] pr-[5%] pt-[50px] pb-[50px] m-0 flex justify-center">
         <div className="w-full flex flex-col sm:flex-row sm:justify-between sm:items-start gap-5">
-          <div className='projectDetail'>
+          <div className='projectDetail w-full sm:w-[50%]'>
             <h1>Peninsula Group Limited</h1>
-            <h5 className="text-base">UI/UX Design</h5>
+            <h5 className="text-base w-full sm:w-[50%]">UI/UX Design</h5>
           </div>
 
-          <div className='projectDetail'>
+          <div className='projectDetail w-full sm:w-[50%]'>
             <h5 className="text-base font-normal">Peninsula group 웹사이트 리디자인 프로젝트는 Employsure에서 Peninsula group으로의 
             리브랜딩 과정에서 진행되었습니다. 기존 웹사이트를 최신 디자인 트렌드에 맞춰 재구성하고, 사용자 
             경험을 개선하여 보다 직관적이고 효율적인 인터페이스를 구축하는 것이 핵심 목표였습니다.</h5>

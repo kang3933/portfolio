@@ -71,7 +71,7 @@ export default function Home(){
 
 
 
-      <section className="w-full h-auto flex flex-row justify-between items-center bg-[#242424] pt-[3rem] pb-[3rem]">
+      <section className="w-full h-auto flex flex-row justify-between items-center bg-[#242424] pt-[3rem]">
 
         <div className="flex w-full justify-between pl-[5%] pr-[5%]">
 
@@ -214,8 +214,8 @@ export default function Home(){
             src="/mockup/me2.png"  
             alt="My photo"
             fill
-            quality={80} // (선택) 이미지 퀄리티 조절 (0~100)
-            className="object-contain"
+            quality={100} // (선택) 이미지 퀄리티 조절 (0~100)
+            className="object-contain object-right"
             />
 
         </div>
