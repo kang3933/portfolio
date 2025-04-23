@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from 'next/image';
-import { motion, AnimatePresence } from "framer-motion";
+//import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { FiGlobe, FiHome } from "react-icons/fi";
 //import Image from 'next/image';
