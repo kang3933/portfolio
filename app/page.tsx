@@ -334,7 +334,7 @@ export default function Home(){
 
                 {/* 아이콘 버튼 – 하단 고정 */}
                 <div className="w-full flex justify-end mt-6">
-                  <Link href="/Projects/Beinc" passHref>
+                  <Link href="/Projects/OtherProjects" passHref>
                     <div className="w-8 h-8 rounded-full bg-[#131313] text-white flex justify-center items-center hover:scale-105 transition-transform duration-200 cursor-pointer shadow-lg">
                       <FiPlus size={24} />
                     </div>
@@ -365,7 +365,7 @@ export default function Home(){
 
                 {/* 아이콘 버튼 – 하단 고정 */}
                 <div className="w-full flex justify-end mt-6">
-                  <Link href="/Projects/Beinc" passHref>
+                  <Link href="/Projects/Drawings" passHref>
                     <div className="w-8 h-8 rounded-full bg-[#131313] text-white flex justify-center items-center hover:scale-105 transition-transform duration-200 cursor-pointer shadow-lg">
                       <FiPlus size={24} />
                     </div>
@@ -437,7 +437,7 @@ export default function Home(){
               <div className="mt-6">
                 <a
                   href="/resume/Hyunjin_Kang_Resume.pdf"
-                  download="Hyunjin_Kang_Resume_Korean.pdf"
+                  download="Hyunjin_Kang_Resume.pdf"
                   className="w-14 h-14 rounded-full bg-[#131313] text-white flex justify-center items-center hover:scale-105 transition-transform duration-200 cursor-pointer shadow-lg"
                 >
                   <FiDownload size={24} />
